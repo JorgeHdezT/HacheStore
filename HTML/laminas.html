@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="stylesheet" href="../CSS/laminasStyle.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laminas</title>
+</head>
+<body>
+  <div id="logo">
+    <img src="../imagenes/logo.png">
+  </div>
+
+  <div id="barNav">
+    <a href="../index.html">LOG IN</a>
+    <a href="stickers.html">STICKERS</a>
+    <a href="#">PRINTS</a>
+    <a href="sobreH.html">SOBRE HACHE</a>
+  </div>
+
+  <div id="laminasbanner">
+    <a href="#fondo">
+      <img src="../imagenes/laminasbanner.jpg">
+    </a>
+  </div>
+
+  <h1>¿BUSCAS ALGUNA EN ESPECIAL?</h1>
+  <div id="ListaLaminas">
+    <ul class = "nav">
+      <li class="main"><a href="">Boku No Hero</a>
+        <ul>
+          <li><a href="">Deku</a></li>
+          <li><a href="">Bakugo</a></li>
+          <li><a href="">Dabi</a></li>
+        </ul>
+      </li>
+      <li class="main"><a href="">Chainsaw Man</a>
+        <ul>
+          <li><a href="">Makima</a></li>
+          <li><a href="">Power</a></li>
+        </ul>
+      </li>
+
+      <li class="main"><a href="">One Piece</a>
+        <ul>
+          <li><a href="">Luffy Nikka Model</a></li>
+        </ul>
+      </li>
+
+      <li class="main"><a href="">Kimetsu No yaiba</a>
+        <ul>
+          <li><a href="">Inosuke</a></li>
+        </ul>
+      </li>
+
+      <li class="main"><a href="">Jujutsu Kaisen</a>
+        <ul>
+          <li><a href="">Itadori + Sukuna</a></li>
+          <li><a href="">Yuuta</a></li>
+        </ul>
+      </li>
+
+      <li class="main"><a href="">Otros</a>
+        <ul>
+          <li><a href="">Sailor moon</a></li>
+          <li><a href="">Rei Ayanami</a></li>
+          <li><a href="">Kakegurui</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div id="laminas">
+    <section>
+      <img src="../imagenes/laminas/9.png">
+      <img src="../imagenes/laminas/6.png">
+      <img src="../imagenes/laminas/2.png">
+      <img src="../imagenes/laminas/8.png">
+      <img src="../imagenes/laminas/1.png">
+      <img src="../imagenes/laminas/3.png">
+      <img src="../imagenes/laminas/4.png">
+      <img src="../imagenes/laminas/5.png">
+      <img src="../imagenes/laminas/7.png">
+    </section>
+  </div>
+
+  <div class="formulario">
+    
+    <form>
+      <h2>ENCARGAR UNA LÁMINA</h2>
+      <label>Nombre:</label>
+      <input type="text" name="name" />
+      
+      <label>Apellidos:</label>
+      <input type="text" name="surname" /><br><br>
+      
+      <label>Modo de contacto:</label>
+      <input type="checkbox" name="contact" value="Instagram" />Instagram
+      <input type="checkbox" name="contact" value="Twitter" />Twitter
+      <input type="checkbox" name="contact" value="Whatsapp" />Whatsapp
+      <br><br>
+      
+      <label>Nombre de usuario:</label>
+      <input type="text" name="username" /><br><br>
+      
+      <label>País:</label>
+      <select name="country">
+        <option value="españa">España</option>
+      </select>
+      
+      <label>Ciudad:</label>
+      <select name="city">
+        <option value="Santa Cruz de Tenerife">Santa Cruz de Tenerife</option>
+        <option value="Las Palmas de Gran Canaria">Las Palmas de Gran Canaria</option>
+        <option value="Madrid">Madrid</option>
+        <option value="Barcelona">Barcelona</option>
+        <option value="Sevilla">Sevilla</option>
+        <option value="Bilbao">Bilbao</option>
+        <option value="Galicia">Galicia</option>
+      </select><br><br>
+      
+      <label>Presupuesto:</label>
+      <input type="checkbox" name="budget" value="5€" />5€
+      <input type="checkbox" name="budget" value="10€" />10€
+      <input type="checkbox" name="budget" value="15€" />15€
+      <input type="checkbox" name="budget" value="20€" />20€<br><br>
+      
+      <label>Descripción:</label><br>
+      <textarea name="description"></textarea><br><br>
+      
+      <input type="submit" value="Enviar" id="enviar" />
+    </form>
+  </div>
+
+  <div class="espacio">.</div>  
+
+  <div class="fondo" id="fondo">
+
+    <h1 id="headfondo">ARTE TRADICIONAL</h1>
+    <div class="fotos">
+      <img src="../imagenes/sketch.jpg" class="imagen" id="imagen1">
+      <img src="../imagenes/lineart.png"  class="imagen" id="imagen2">
+      <img src="../imagenes/color.png"  class="imagen" id="imagen3">
+
+      <div class="fondofotos" id="uno">
+        <p class="desc" id="desc1" >SKETCH</p>
+      </div>
+      <div class="fondofotos" id="dos">
+        <p class="desc" id="desc2">LINEART</p>
+      </div>
+      <div class="fondofotos" id="tres">
+        <p class="desc" id="desc3">FULL COLOR</p>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

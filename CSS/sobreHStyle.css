@@ -1,0 +1,389 @@
+body  {
+    background-color: #272c2e;
+    
+  }
+  
+  #logo {
+    position: relative;
+    top: -10px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    margin: auto;
+    animation-duration: 1s;
+    animation-name: logoapertura;
+  }
+  
+  @keyframes logoapertura {
+    from {
+      width: 0px;
+      height: 1px;
+      opacity: 0%;
+      transform: rotate(0deg);
+    }
+  
+    to {
+      height: 200px;
+      width: 200px;
+      opacity: 100%;
+      transform: rotate(360deg);
+    }
+  }
+  
+  #barNav {
+    position: relative;
+    top: -20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #barNav a{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    font-family: sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+    /*--------*/
+    transition: all;
+    transition-duration: 1s;
+  }
+  
+  #barNav a:hover {
+    color: white;
+    text-shadow: 0 0 5px #00ffdd, 0 0 20px #45F3FF, 0 0 70px #45F3FF, 0 0 100px #00eeff;
+    /*color: #91CEFF;*/
+  }
+
+  #logoHache {
+    position: absolute;
+    left: 480px;
+    width: 800px;
+    opacity: 5%;
+    z-index: -1;
+  }
+
+  #hachebanner {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  filter: drop-shadow(0px 20px 20px #000000);
+  /**/
+}
+
+#telefonos {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  animation: aparicion 2s linear forwards;
+
+}
+
+.imgs {
+  width: 250px;
+  transition: all;
+  transition-duration: 1s;
+  border-radius: 47px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@keyframes aparicion {
+  from {
+    height: 0px;
+    filter: opacity(0%);
+    filter: drop-shadow(10deg);
+  }
+  to {
+    margin-top: 20px;
+    height: 650px;
+    filter: opacity(100%);
+    filter: drop-shadow(50deg);
+  } 
+}
+
+.imgs:hover {
+  width: 300px;
+  box-shadow: 0 0 5px #00ffdd, 0 0 20px #45F3FF, 0 0 10px #45F3FF;
+}
+
+.hache {
+  position: absolute;
+  width: 400px;
+  filter: drop-shadow(16px 16px 10px black);
+}
+
+#hache1 {
+  top: 750px;
+  left: 10px;
+  animation: Hflota1 4.5s infinite linear;
+}
+
+#hache2 {
+  top: 765px;
+  left: 1400px;
+  animation: Hflota2 4.5s infinite linear;
+}
+
+@keyframes Hflota1 {
+  0% {
+    transform: translate(0%, 0%) rotate(360deg);
+  }
+
+  25% {
+    transform: translate(5%, 10%) rotate(360deg);
+  }
+
+  50% {
+    transform: translate(10%, 5%) rotate(360deg);
+  }
+
+  75% {
+    transform: translate(0%, 10%) rotate(360deg);
+  }
+
+  100% {
+    transform: translate(0%, 0%) rotate(360deg);
+  }
+
+}
+
+@keyframes Hflota2 {
+  0% {
+    transform: translate(0%, 0%) rotate(360deg);
+  }
+
+  25% {
+    transform: translate(8%, 5%) rotate(360deg);
+  }
+
+  50% {
+    transform: translate(5%, 10%) rotate(360deg);
+  }
+
+  75% {
+    transform: translate(5%, 0%) rotate(360deg);
+  }
+
+  100% {
+    transform: translate(0%, 0%) rotate(360deg);
+  }
+
+}
+
+#twitchlogo {
+  position: absolute;
+  z-index: 2;
+  width: 250px;
+  top: 1230px;
+  left: 788px;
+}
+
+#twitchgif {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  transition: all 1s;
+}
+
+#twitchgif:hover {
+  transform: scale(110%);
+  box-shadow: 0 0 5px #8800ff, 0 0 20px #ea00ff, 0 0 70px #4000ff, 0 0 50px #ffffff;
+
+}
+
+#angry {
+  position: absolute;
+  top: 65px;
+  left: 700px;
+  width:  400px;
+  animation: enfado 2s linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes enfado{
+  from {
+    width:  400px;
+  } 
+  
+  50% {
+    top: 55px;
+    left: 670px;
+    width: 430px;
+  }
+
+  to {
+    width:  400px;
+  }
+}
+
+.espacio {
+  margin-top: 600px;
+}
+
+#contenedor {
+  position: absolute;
+  width: 1100px;
+  height: 500px;
+  top: 1300px;
+  left: 360px;
+  border: 1px solid;
+  box-shadow: 0 0 5px #8800ff, 0 0 20px #ea00ff, 0 0 70px #4000ff, 0 0 50px #ffffff;
+}
+
+/*/////////////////////////*/
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  #logo {
+    transform: scale(75%);
+  }
+}
+
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  #barNav a{
+    width: 70%;
+    height: 70%;
+    margin-left: 30px;
+    background-color: #91CEFF;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    text-shadow: 0 0 5px black, 0 0 5px black;
+    font-size: 13px;
+    justify-content: center;
+    z-index: 3;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  #bannerH, img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  #telefonos {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: -150px;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .imgs {
+    width: 80%;
+    height: 50%;
+    border-radius: 20px;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .imgs:hover {
+    width: 150px;
+    border-radius: 25px;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .hache {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  #hache2 {
+    left: 277px;
+    top: 8px;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  #hache1 {
+    left: -5px;
+    top: 8px;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  #twitchlogo, #contenedor {
+    top: 550px;
+    left: -420px;
+    transform: scale(30%);;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  #twitchgif {
+    top: 130px;
+    width: 1000px;
+    height: 600px;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  #twitchgif:hover {
+    top: 130px;
+    width: 1000px;
+    height: 600px;
+    transform: scale(105%);
+  }
+}
+
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  #contenedor {
+    top: 500px;
+    height: 800px;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  #angry {
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  #twitchlogo {
+    z-index: 2;
+    left: -45px;
+    top: 526px;
+    width: 500px;
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .espacio {
+    margin-top: 0px;
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  #contenedor{
+    left: -345px;
+    top: 402px;
+  }
+}
+
