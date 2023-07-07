@@ -364,7 +364,7 @@ body  {
   /* For mobile phones: */
   #twitchlogo {
     z-index: 2;
-    left: -45px;
+    left: -65px;
     top: 526px;
     width: 500px;
     height: 300px;
@@ -382,7 +382,7 @@ body  {
 @media only screen and (max-width:500px) {
   /* For mobile phones: */
   #contenedor{
-    left: -345px;
+    left: -365px;
     top: 402px;
   }
 }
